@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+        <style>
+          
+            .container{
+
+                width: 100vw;
+                height: 100vh;
+                
+              
+            }
+          header{
+            background-color: rgb(52, 52, 126);
+            height: 50vh;
+            display: grid;
+            
+            grid-template-rows: 1fr 4fr;
+            
+            
+            width: 100vw;
+          }
+          
+
+          
+          
+          .logo img{
+
+            
+            grid-column: 1/2;
+            max-width: 70%;
+            height: auto;
+            align-self: center;
+            margin-left: 100px;
+            margin-top: 5px;
+            opacity: 0.2;
+            object-fit: contain;
+
+          }
+          nav{
+              align-self: center;
+              padding: 10PX;
+                
+                grid-column: 2/3;
+          }
+          nav a,.footeritem2details a
+          {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: roboto,sans-serif ;
+            text-transform: uppercase;
+            padding: 20px;
+            ;
+          }
+          a:link{
+            color: white;
+          }
+          a:visited{
+            color: rgb(113, 120, 122);
+          }
+          a:hover{
+            color: rgb(2, 109, 145);
+          }
+          a:active{
+            color: lightblue;
+          }
+
+          
+          .headertop{
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            background-color: rgba(0,0,0 ,0.2);
+            grid-row: 1/2;
+            
+            position: fixed;
+            transition: background-color 0.1s ease;
+            z-index: 1000;
+           
+            
+          }
+          .headbottom{
+            display: grid;
+            grid-template-columns: 4fr 2fr;
+            
+            grid-row: 2/3;
+          }
+          .headercontent
+          {
+            align-self: center;
+            grid-column: 1/2;
+            margin-left: 40px;
+          }
+          .headerbackground img{
+            grid-column: 1/2;
+            max-width: 80%;
+            height: auto;
+            
+            object-fit: contain;
+           
+            grid-column: 2/3;
+          }
+          .paragraph{
+                color: white;
+                font-size: 18px;
+                font-weight: 100; 
+                font-family: roboto,sans-serif;
+          }     
+            
+          .services{
+            
+            
+            background-color: white;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            
+          }
+          
+          .servicelistcontent{
+            
+            
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            height: 250px;
+            width: 500px;
+            background-color: white;
+            border-radius: 10px;
+            margin: 50px;           
+            
+          }
+
+          .servicesimage img{
+
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px 10px;
+
+
+          }
+          .servicesdetails p{
+              color: #000;
+              font-size: 17px;
+              font-family: roboto,sans-serif;
+              margin: 10px;
+              
+              
+
+
+          }
+          .servicesdetails h1{
+
+            color: #000;
+            font-family: sans-serif;
+            margin: 10px;
+            padding: 10px;
+            font-weight: bolder;
+
+          }
+          .highlighted-text {
+    background-color:darkgreen;
+    color: white;
+}
+.overlay-design {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+            
+           
+            
+        }
+
+        .overlay {
+            
+            
+            width: 400px; /* Adjust width as needed */
+            height: 350px; /* Adjust height as needed */
+           
+            position: relative;
+            
+            background-color:white;
+            
+            border-radius: 10px;
+            margin: 10px;
+            z-index: 2;
+           
+        }
+        .overlay1 {
+            
+            
+            width: 300px; /* Adjust width as needed */
+            height: 300px; /* Adjust height as needed */
+            position: relative;
+            
+            margin: -120px 125px 20px 10px;
+           z-index: 3;
+            background-color:white;
+            
+            border-radius: 10px;
+           
+        }
+
+
+        .overlay img {
+            width: 100%;
+            height:100%;
+            object-fit:cover ;
+        }
+        .overlay1 p
+        {
+          color: black;
+          text-align: center;
+          font-size: 20px;
+        }
+        .overlay1 h2
+        {
+          color: black;
+          text-align: center;
+          font-size: large;
+          font-weight: bold;
+        }
+        
+.casestudy,.clients
+{
+    height: 70%;
+    
+    width: 100%;
+    background-color: rgb(52, 52, 126);
+}
+.technologies
+{
+    height: 70%;
+    
+    width: 100%;
+    background-color: white;
+}
+.mobileapp{
+
+  background-color: white;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+                
+}
+            
+
+
+.mobileappitems{
+  height: 200px;
+  width: 400px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            
+            margin: 20px;
+            background-color: white;
+            border-color: white;
+            box-shadow: 10px 5px 5px lightgray;
+            
+}            
+            
+.mobileappimage img{
+
+height:40%;
+width: 40%;
+
+
+
+
+}
+.mobileappcontent p{
+              color: #000;
+              font-size: 17px;
+              font-family: roboto,sans-serif;
+              
+              
+              
+
+
+          }
+          .clientslist{
+
+          background-color:rgb(52, 52, 126);
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          }
+          .clientslistbox {
+            height: 100px;
+            width: 200px;
+            background-color: white;
+            border-radius: 10px;
+            margin: 20px;
+
+          }
+          .clientslistimage img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+          footer{
+
+            height: 70vh;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0px;
+            
+          }
+          .footeritem1{
+
+            height: 250px;
+            width: 300px;
+            display: grid;
+            grid-template-rows: 3fr 1fr;
+            background-color: rgba(52, 52, 126,0.2);
+            border-radius: 10px;
+            margin: 50px;
+          }
+          .griditem1 img{
+
+            grid-row: 1/2;
+            height: 40%;
+            width: 50%;
+            justify-self: baseline;
+            object-fit: cover;
+
+          }
+         
+          .griditem2 img{
+            grid-row: 2/3;
+            height: 20px;
+            width: 20px;
+            margin: 10px;
+            object-fit: cover;
+          }
+          .footeritem2{
+            
+            height: 350px;
+            width: 200px;
+            margin: 10px;
+            padding: 20px;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+           
+          }
+          .footeritem2details{
+            color: white;
+            margin: 10px;
+            
+
+          }
+          
+          .footeritem3{
+height: 350px;
+width: 600px;
+background-color: black;
+margin: 10px;
+padding: 20px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+
+          }
+          .footeritem3address{
+
+            height: 60%;
+            width: 30%;
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+            margin: 10px;
+            
+          }
+         
+          
+               
+
+   
+
+
+
+          
+
+        
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                  <div class="headertop">
+                        <div class="logo">
+                              <a href="index.html" target="_blank">
+                                     <img  src="images/white-logo-1024x430.png">
+                              </a>
+                
+                         </div>
+             
+                      <nav class="nav">
+                          <a href="kiebotservices.html" target="_blank">SERVICES</a>
+                          <a href="portfolio.html" target="_blank">portfolio</a>
+                          <a href="insights.html" target="_blank">insights</a>
+                          <a href="careers.html" target="_blank">careers</a>
+                          <a href="lifeatkiebot.html" target="_blank">life@kiebot</a>
+                          <a href="company.html" target="_blank">company</a>
+                          <button>CONTACT</button>
+
+            
+                      </nav>
+                  </div>
+           
+                  <div class="headbottom">
+                          <div class="headercontent">
+                              <h1 style="color: white; font-family: roboto,sans-serif;">Our Services</h1>
+                              <div class="paragraph">
+                                     <p>At Kiebot, we’re dedicated to delivering excellence in a wide range of services to meet your unique needs. Explore our comprehensive offerings and discover Kiebot’s Approach, which sets us apart in the context of each service:
+
+                                    </p>
+                              </div>
+                          </div>
+                        <div class="headerbackground">
+                  
+                              <img src="images/Operations-Management-480x304.png"
+              
+                        </div>
+                
+            </header>
+            
+       
+            <div class="services">
+                  
+                        <div class="servicelistcontent">
+                            <div class="servicesimage">
+                                    <img src="images/service-new-1-01-659x1024.jpg">
+                            </div>
+                        
+                        <div class="servicesdetails">
+                                  <h2>Dedicated Development Team</h2>
+                                  <p>Leverage our versatile 360 Engineers—both developers and QA specialists—to build a dedicated team tailored to your project. Our team offers expertise in various technologies, ensuring top-quality solutions.
+                                  </p>
+                                  
+                                  <p></p><span class="highlighted-text">Kiebot's Approach :</span> We customize teams to meet your specific project requirements, providing a flexible, on-demand, and scalable solution.</p>
+                                  
+                        </div>
+                        </div>
+                       <div class="servicelistcontent">
+                              <div class="servicesimage">
+                                    <img src="images/service-new-2-01-659x1024.jpg">
+                              </div>
+                          <div class="servicesdetails">
+                                  <h2>Custom Software Development</h2>
+                                  <p>Our experienced team excels in creating custom software solutions that align with your vision and business goals. We follow industry best practices, ensuring efficient, high-quality results </p>
+                                  <p><span class="highlighted-text"> Kiebot's Approach :</span> We embrace agile methodologies and cutting-edge technology stacks to deliver innovative solutions</p>
+                          </div>
+                        </div>
+                        <div class="servicelistcontent">
+                              <div class="servicesimage">
+                                    <img src="images/product-dev-01-659x1024.jpg">
+                              </div>
+                          <div class="servicesdetails">
+                                  <h2>Product Development</h2>
+                                  <p>Let us turn your idea into reality with our product development expertise. We guide you through every stage, from concept to launch, ensuring a successful product. </p>
+                                  <p><span class="highlighted-text">Kiebot's Approach :</span> Our leadership team brings deep industry knowledge to drive your product's success.</p>
+                          </div>
+                        </div>
+                        <div class="servicelistcontent">
+                              <div class="servicesimage">
+                                    <img src="images/mobile-apps-01-659x1024.jpg">
+                              </div>
+                          <div class="servicesdetails">
+                                  <h2>Mobile Apps</h2>
+                                  <p>Create exceptional mobile apps with Kiebot. We’re proficient in developing Android, iOS, React Native, and Flutter applications, offering an engaging user experience.</p>
+                                  <p><span class="highlighted-text">Kiebot's Approach :</span> Our commitment to innovation ensures your apps stand out in a crowded market.</p>
+                          </div>
+                        </div>
+                        <div class="servicelistcontent">
+                              <div class="servicesimage">
+                                    <img src="images/web-dev-01-659x1024 (1).jpg">
+                              </div>
+                          <div class="servicesdetails">
+                                  <h2>
+                                    Web Development</h2>
+                                  <p>Achieve a strong online presence with our web development services. We use technologies like React and Next.js to build responsive, dynamic websites.</p>
+                                  <p><span class="highlighted-text">Kiebot's Approach :</span> Our team values continuous learning and personal growth to stay at the forefront of web development trends.</p>
+                          </div>
+                        </div>
+                          <div class="servicelistcontent">
+                              <div class="servicesimage">
+                                    <img src="images/product-mvp-01-659x1024.jpg">
+                              </div>
+                              <div class="servicesdetails">
+                                  <h2>Product MVP</h2>
+                                  <p>Launch your minimum viable product (MVP) with Kiebot’s support. We’ll help you test your concept and get to market quickly.</p>
+                                  <p><span class="highlighted-text">Kiebot's Approach :</span> We focus on innovative UI/UX design, making your software not only functional but also delightful to use.</p>
+                               </div>
+                          </div>
+                          <div class="servicelistcontent">
+                              <div class="servicesimage">
+                                    <img src="images/QA-01-659x1024.jpg">
+                              </div>
+                              <div class="servicesdetails">
+                                  <h2>Software Testing & QA</h2>
+                                  <p>Kiebot offers comprehensive software testing and quality assurance services to ensure bug-free, top-quality software.</p>
+                                  <p><span class="highlighted-text">Kiebot's Approach :</span> Our 360 QA Engineers are equipped with project management expertise and guided by experts to enhance efficiency.</p>
+                               </div>
+                          </div>
+                          <div class="servicelistcontent">
+                              <div class="servicesimage">
+                                    <img src="images/web-dev-01-659x1024.jpg">
+                              </div>
+                              <div class="servicesdetails">
+                                  <h2>UI/UX</h2>
+                                  
+                                  <p>Our design team specializes in creating intuitive, user-friendly interfaces and experiences, enhancing your product’s appeal and usability.</p>
+                                  <p><span class="highlighted-text">Kiebot's Approach :</span> We focus on innovative UI/UX design, making your software not only functional but also delightful to use.</p>
+                               </div>
+                          </div>
+                          
+                  
+            </div>    
+            <div class="casestudy">
+              <h1 style="margin: 50px; padding: 50px; font-family: roboto,sans-serif; color: white; font-weight: bolder; text-align: center;">Case Studies</h1>
+              <p style="font-size: larger; text-align: center; margin: 50px; font-weight: roboto,sans-serif; color: white;">Explore Our Success Stories: Real-World Solutions, Exceptional Results. Discover how Kiebot transformed challenges into triumphs for our clients with a showcase of our finest work.</p>
+              
+             
+                  <div class="overlay-design">
+                      <div class="overlay">
+                          <a href="" target="_blank"><img src="images/zag-03 (1).png"></a>
+                      </div>
+                      <div class="overlay">
+                          <a href="" target="_blank"><img src="images/workomo-03.png"></a>
+                      </div>
+                      <div class="overlay">
+                          <a href="" target="_blank"><img src="images/bren-03.png"></a>
+                      </div>
+                  </div>
+                  
+                  <div class="overlay-design">
+                  
+                 
+                      <div class="overlay1">
+                          <a href="" target="_blank" style="text-decoration: none;"><h2>Zag Network</h2><p>The partnership between Kiebot and ZAG Network stands as a testament to the power of collaboration in achieving remarkable technological advancements</p></a>
+                      </div>
+                      <div class="overlay1">
+                          <a href="" target="_blank" style="text-decoration: none;"><h2>Workmo</h2><p>Kiebot initiated a strategic approach for successful product deployment. Our developers thoroughly understood the product, design flows, and delivered the end product</p></a>
+                      </div>
+                      <div class="overlay1">
+                          <a href="" target="_blank" style="text-decoration: none;"><h2>Bren</h2><p>In the case of Bren, ensuring top-quality for layman end users was critical. Our dedicated agile QA engineers excelled in meeting this challenge.</p></a>
+                      </div>
+                  </div>
+            
+              
+              
+              <div class="technologies">
+                  <h1 style="margin: 50px; padding: 50px; font-family: roboto,sans-serif; color: black; font-weight: bolder; text-align: center;">Technologies</h1>
+                  <p style="font-size: larger; text-align: center; margin: 50px; font-weight: roboto,sans-serif; color: black;">Our experienced team excels in a wide array of cutting-edge technologies, ensuring we deliver top-notch solutions tailored to your needs.</p>
+              </div>
+         
+           
+            <div><h2>Mobile App Development</h2></div>  
+            <div class="mobileapp">
+              <div class="mobileappitems">
+                <div class="mobileappimage">
+                  <img src="images/android.svg">
+
+                </div>
+                <div class="mobileappcontent">
+                  <h2>Android</h2>
+                  <p>A widely-used mobile operating system developed by Google.</p>
+
+                </div>
+              </div>
+              <div class="mobileappitems">
+                <div class="mobileappimage">
+                  <img src="images/apple-ios.svg">
+
+                </div>
+                <div class="mobileappcontent">
+                  <h2>IOS</h2>
+                  <p>Apple's mobile operating system, known for its high performance and user-friendly interface.</p>
+
+                </div>
+              </div>
+              <div class="mobileappitems">
+              <div class="mobileappimage">
+                <img src="images/react-native.svg">
+
+              </div>
+              <div class="mobileappcontent">
+                <h2>React Native</h2>
+                <p>Apple's mobile operating system, known for its high performance and user-friendly interface.</p>
+
+              </div>
+            </div>
+            <div class="mobileappitems">
+              <div class="mobileappimage">
+                <img src="images/flutter.svg">
+
+              </div>
+              <div class="mobileappcontent">
+                
+                <h2>Flutter</h2>
+                <p>An open-source UI software development toolkit from Google for building natively compiled applications for mobile, web, and desktop.</p>
+
+              </div>
+            </div>
+          </div>
+            <div ><h2>Frontend Development</h2></div>
+            <div class="mobileapp">
+              <div class="mobileappitems">
+                <div class="mobileappimage">
+                  <img src="images/react.svg">
+
+                </div>
+                <div class="mobileappcontent">
+                  <h2>React</h2>
+                  <p>A popular JavaScript library for building user interfaces, maintained by Facebook.</p>
+
+                </div>
+              </div>
+              <div class="mobileappitems">
+                <div class="mobileappimage">
+                  <img src="images/nextjs.svg">
+
+                </div>
+                <div class="mobileappcontent">
+                  <h2>Next.js</h2>
+                  <p>React-based web framework that enables functionality such as server-side rendering and generating static websites.</p>
+
+                </div>
+              </div>
+            </div><div ><h2>Backend Development</h2></div>
+            <div class="mobileapp">
+              
+              <div class="mobileappitems">
+                <div class="mobileappimage">
+                  <img src="images/nodejs.svg">
+
+                </div>
+                <div class="mobileappcontent">
+                  <h2>Node.js</h2>
+                  <p>An open-source, versatile JavaScript runtime for building server-side and networking applications.</p>
+
+              
+                </div>
+              </div>
+              <div class="mobileappitems">
+                <div class="mobileappimage">
+                  <img src="images/nestjs.svg">
+
+                </div>
+                <div class="mobileappcontent">
+                  <h2>Nest.js</h2>
+                  <p>A progressive Node.js framework for efficient and reliable server-side applications.</p>
+
+              
+                </div>
+              </div>
+              <div class="mobileappitems">
+                <div class="mobileappimage">
+                  <img src="images/python.svg">
+
+                </div>
+                <div class="mobileappcontent">
+                  <h2>Python</h2>
+                  <p>A powerful, versatile programming language widely used for various applications</p>
+
+              
+                </div>
+              </div>
+              <div class="mobileappitems">
+                <div class="mobileappimage">
+                  <img src="images/java.svg">
+
+                </div>
+                <div class="mobileappcontent">
+                  <h2>Java</h2>
+                  <p>A widely-used, robust, object-oriented programming language for enterprise-level applications.</p>
+
+              
+                </div>
+              </div>
+              <div class="mobileappitems">
+                <div class="mobileappimage">
+                  <img src="images/laravel.svg">
+
+                </div>
+                <div class="mobileappcontent">
+                  <h2>Laravel</h2>
+                  <p>A PHP framework known for its elegant syntax and tools for tasks such as routing, authentication, and caching.</p>
+
+              
+                </div>
+              </div>
+              
+            </div>
+          
+          <div ><h2>Database Expertise</h2></div>
+          <div class="mobileapp">
+            
+            <div class="mobileappitems">
+              <div class="mobileappimage">
+                <img src="images/postgresql.svg">
+
+              </div>
+              <div class="mobileappcontent">
+                <h2>PostgreSQL</h2>
+                <p>A powerful, open-source, object-relational database system known for reliability and performance.</p>
+
+            
+              </div>
+            </div>
+            <div class="mobileappitems">
+              <div class="mobileappimage">
+                <img src="images/17459301571551942128.svg">
+
+              </div>
+              <div class="mobileappcontent">
+                <h2>MongoDB</h2>
+                <p>A popular, cross-platform, document-oriented database program, using JSON-like documents.</p>
+
+            
+              </div>
+            </div>
+           
+              </div>
+              <div ><h2>DevOps</h2></div>
+          <div class="mobileapp">
+            
+            <div class="mobileappitems">
+              <div class="mobileappimage">
+                <img src="images/aws.svg">
+
+              </div>
+              <div class="mobileappcontent">
+                <h2>aws</h2>
+                <p>Amazon Web Services offers a comprehensive suite of cloud services for scalable computing, storage, and more.</p>
+
+            
+              </div>
+            </div>
+            <div class="mobileappitems">
+              <div class="mobileappimage">
+                <img src="images/google-cloud-1536x1235.png">
+
+              </div>
+              <div class="mobileappcontent">
+                <h2>GoogleCloud</h2>
+                <p>Amazon Web Services offers a comprehensive suite of cloud services for scalable computing, storage, and more.</p>
+
+            
+              </div>
+            </div>
+            <div class="mobileappitems">
+              <div class="mobileappimage">
+                <img src="images/docker.svg">
+
+              </div>
+              <div class="mobileappcontent">
+                <h2>Docker</h2>
+                <p>Docker is a platform for developing, shipping, and running applications in isolated containers.</p>
+
+            
+              </div>
+            </div>
+            <div class="mobileappitems">
+              <div class="mobileappimage">
+                <img src="images/Microsoft_Azure-Logo.wine_-1536x1024.png">
+
+              </div>
+              <div class="mobileappcontent">
+                <h2>Microsoft Azure</h2>
+                <p>Azure is Microsoft's cloud platform supporting diverse services for application development and deployment.</p>
+
+            
+              </div>
+            </div>
+            <div class="mobileappitems">
+              <div class="mobileappimage">
+                <img src="images/kubernetes.svg">
+
+              </div>
+              <div class="mobileappcontent">
+                <h2>Kubernetes</h2>
+                <p>Kubernetes is an open-source container orchestration platform for automating deployment and scaling of containerized applications.</p>
+
+            
+              </div>
+            </div>
+            <div class="mobileappitems">
+              <div class="mobileappimage">
+                <img src="images/gitlab-ci-cd.png">
+
+              </div>
+              <div class="mobileappcontent">
+                <h2>Gitlab CI/CD Pipeline</h2>
+                <p>GitLab CI/CD automates building, testing, and deployment processes integrated directly into GitLab repositories.</p>
+
+            
+              </div>
+            </div>
+            <div class="mobileappitems">
+              <div class="mobileappimage">
+                <img src="images/github-action.png">
+
+
+              </div>
+              <div class="mobileappcontent">
+                <h2>Github Action</h2>
+                <p>GitHub Actions is an automation platform within GitHub for defining workflows to build, test, and deploy code.</p>
+
+            
+              </div>
+            </div>
+            <div class="mobileappitems">
+              <div class="mobileappimage">
+                <img src="images/terraform.png">
+
+              </div>
+              <div class="mobileappcontent">
+                <h2>Terraform</h2>
+                <p>Terraform is an open-source Infrastructure as Code (IaC) tool for declaratively provisioning and managing infrastructure across various platforms.</p>
+
+            
+              </div>
+            </div>
+
+          </div>
+          <div class="clients">
+            <h1 style="margin: 50px;padding:50px;font-family:  roboto,sans-serif; color :white; font-weight:   bolder;text-align: center;">Our Clients</h1>
+            <p style=" font-size: larger;text-align: center; margin: 50px;font-weight: roboto,sans-serif; color: white;">Dive into the Broad Spectrum of Organizations, and Businesses, spanning various sectors and industries, all of whom entrust us with the responsibility of helping them attain their respective goals and objectives</p>
+          </div>
+          <div><h2 style="margin: 0;font-family:  roboto,sans-serif;background-color: rgb(52, 52, 126); color :white; font-weight:   bolder;text-align: center;">StartUps</h2>
+          </div>
+
+          <div class="clientslist">
+                
+              <div class="clientslistbox">
+                <div class="clientslistimage">
+                 <img src="images/bunnyzon-1.png">
+  
+              </div>
+                
+               
+              </div>
+              <div class="clientslistbox">
+                <div class="clientslistimage">
+                 <img src="images/edtube.png">
+  
+              </div>
+                
+               
+              </div>
+              <div class="clientslistbox">
+                <div class="clientslistimage">
+                 <img src="images/h-com.png">
+  
+              </div>
+                
+               
+              </div>
+              <div class="clientslistbox">
+                <div class="clientslistimage">
+                 <img src="images/adidhi-1.png">
+  
+              </div>
+                
+               
+              </div>
+                </div>
+            
+            
+                <div><h2 style="margin: 0;font-family:  roboto,sans-serif;background-color: rgb(52, 52, 126); color :white; font-weight:   bolder;text-align: center;">Tech Companies</h2>
+                </div>
+      
+                <div class="clientslist">
+                      
+                    <div class="clientslistbox">
+                      <div class="clientslistimage">
+                       <img src="images/glowing.png">
+        
+                    </div>
+                      
+                     
+                    </div>
+                    <div class="clientslistbox">
+                      <div class="clientslistimage">
+                       <img src="images/ults.png">
+        
+                    </div>
+                    </div>
+                    <div class="clientslistbox">
+                      <div class="clientslistimage">
+                       <img src="images/neointraction.png">
+        
+                    </div>
+                  </div>
+                </div>
+                
+                <div><h2 style="margin: 0;font-family:  roboto,sans-serif;background-color: rgb(52, 52, 126); color :white; font-weight:   bolder;text-align: center;">Enterprises</h2>
+                </div>
+      
+                <div class="clientslist">
+                      
+                    <div class="clientslistbox">
+                      <div class="clientslistimage">
+                       <img src="images/MBME-1.jpg">
+        
+                    </div>
+                      
+                     
+                    </div>
+                    <div class="clientslistbox">
+                      <div class="clientslistimage">
+                       <img src="images/SDH.jpg">
+        
+                    </div>
+                    </div>
+                    <div class="clientslistbox">
+                      <div class="clientslistimage">
+                       <img src="images/sulekha-1.jpg">
+        
+                    </div>
+                    </div>
+                    <div class="clientslistbox">
+                      <div class="clientslistimage">
+                       <img src="images/sulfex.png">
+        
+                    </div>
+                    </div>
+                    <div class="clientslistbox">
+                      <div class="clientslistimage">
+                       <img src="images/bren-1.jpg">
+        
+                    </div>
+                    </div>
+                </div>
+                <div><h2 style="margin: 0;font-family:  roboto,sans-serif;background-color: rgb(52, 52, 126); color :white; font-weight:   bolder;text-align: center;">Small Scalr Buisness</h2>
+                </div>
+      
+                <div class="clientslist">
+                      
+                    <div class="clientslistbox">
+                      <div class="clientslistimage">
+                       <img src="images/SIT.png">
+        
+                    </div>
+                      
+                     
+                    </div>
+                    <div class="clientslistbox">
+                      <div class="clientslistimage">
+                       <img src="images/Sportto.png">
+        
+                    </div>
+                      
+                     
+                    </div>
+                    <div class="clientslistbox">
+                      <div class="clientslistimage">
+                       <img src="images/mByom.png">
+        
+                    </div>
+                      
+                     
+                    </div>
+                    <div class="clientslistbox">
+                      <div class="clientslistimage">
+                       <img src="images/homebazaar.png">
+        
+                    </div>
+                      
+                     
+                    </div>
+                </div>
+                <div><h2 style="margin: 0;font-family:  roboto,sans-serif;background-color: rgb(52, 52, 126); color :white; font-weight:   bolder;text-align: center;">Multinational Corporations</h2>
+                </div>
+      
+                <div class="clientslist">
+                      
+                    <div class="clientslistbox">
+                      <div class="clientslistimage">
+                       <img src="images/thoughtworks.png">
+        
+                    </div>
+                      
+                     
+                    </div>
+                    <div class="clientslistbox">
+                      <div class="clientslistimage">
+                       <img src="images/ayata.jpg">
+        
+                    </div>
+                      
+                     
+                    </div>
+                    </div>
+          
+                    <div><h2 style="margin: 0;font-family:  roboto,sans-serif;background-color: rgb(52, 52, 126); color :white; font-weight:   bolder;text-align: center;">Nonprofits</h2>
+                    </div>
+          
+                    <div class="clientslist">
+                          
+                        <div class="clientslistbox">
+                          <div class="clientslistimage">
+                           <img src="images/hayathy.png">
+            
+                        </div>
+                          
+                         
+                        </div>
+                        <div class="clientslistbox">
+                          <div class="clientslistimage">
+                           <img src="images/logo-36-01-1536x452.jpg">
+                          </div>
+                        </div>
+                    </div>
+            
+        
+                    <footer>
+                     <div class="footeritem1">
+                      <div class="griditem1">
+                        <a href="index.html" target="_blank"><img  src="images/white-logo-1024x430.png"></a>
+                      </div>
+                      <div class="griditem2">
+                        <a href="" target="_blank"><img src="images/utube.jfif"></a>
+                        <a href="" target="_blank"><img src="images/twitteer.jfif"></a>
+                        <a href="" target="_blank"><img src="images/insta.jfif"></a>
+                        <a href="" target="_blank"><img src="images/linked.png"></a>
+
+                    
+                      </div>
+                     </div>
+                     
+                     <div class="footeritem2">
+                      <div class="footeritem2details">
+                          <h3 style="font-weight: bolder;">Quick Links</h3>
+
+                      </div>
+                      <div class="footeritem2details">
+                        <a href="" target="_blank" >About Us</a>
+
+                    </div>
+                    <div class="footeritem2details">
+                      <a href="" target="_blank" >Contact Us</a>
+
+                  </div>
+                  <div class="footeritem2details">
+                    <a href="" target="_blank" >Blogs</a>
+
+                </div>
+                <div class="footeritem2details">
+                  <a href="" target="_blank" >Privacy Poliocy</a>
+
+              </div>
+              <div class="footeritem2details">
+                <a href="" target="_blank" >FAQ</a>
+
+            </div>
+            <div class="footeritem2details">
+              <a href="" target="_blank" >Our Training Division<span>(upcode)</span></a>
+
+          </div>
+                      
+
+
+                     </div>
+                     <div class="footeritem3">
+                      <div class="footeritem3address">
+                        <h4 style="text-align: center;color:white;font-weight: bold;">
+                          Bangalore, India</h4>
+                          <p style="padding: 10px; color: lightgray;">91springboard, 45/3, Residency Road, Mahatma Gandhi Rd, Bengaluru -560025, Karnataka, India
+
+                          </p>
+
+                      </div>
+                      <div class="footeritem3address">
+                        <h4 style="text-align: center;color:white;font-weight: bold;">
+                          Kannur, India</h4>
+                          <p style="padding: 10px; color: lightgray;">MiZone IT Park, near Kannur University Campus, Kannur -670562, Kerala,India 
+
+                          </p>
+
+                      </div>
+                      <div class="footeritem3address">
+                        <h4 style="text-align: center;color:white;font-weight: bold;">
+                          Malappuram, India</h4>
+                          <p style="padding: 10px; color: lightgray;">Upcode Software Labs Kuttaloor, Safeway Arcade, near Al Ihsan English School, Vengara -676304, Kerala, India 
+
+                          </p>
+
+                      </div>
+                      
+
+
+                     </div>
+                     <div style="text-align: center;"><span style="text-align: center; color: lightgray;margin: 400px;padding: 50px;">Copyright © 2023 Kiebot. All rights reserved.</span></div>
+                    </footer>
+        
+                    
+                      
+        
+
+           
+            
+            
+      </div>  
+      
+      
+      
+      
+    </body>
+</html>
